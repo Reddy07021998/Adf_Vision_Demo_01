@@ -1,0 +1,30 @@
+{
+	"name": "ADLS_EXCEL_SOURCE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_EXCEL_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "DATA.xlsx",
+				"fileSystem": "bulkexcel"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "current_age",
+				"type": "String"
+			}
+		]
+	}
+}
