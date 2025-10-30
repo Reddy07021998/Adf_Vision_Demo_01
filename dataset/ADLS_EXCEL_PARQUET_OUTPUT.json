@@ -2,7 +2,7 @@
 	"name": "ADLS_EXCEL_PARQUET_OUTPUT",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADLS_DEST_PARQUET",
+			"referenceName": "Ls_Excel_Output",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
