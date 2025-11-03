@@ -50,8 +50,11 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "ADLS_EXCEL_PARQUET_OUTPUT",
-						"type": "DatasetReference"
+						"referenceName": "ADLS_PARQUET_OUTPUT",
+						"type": "DatasetReference",
+						"parameters": {
+							"FolderName": "output"
+						}
 					}
 				]
 			}
