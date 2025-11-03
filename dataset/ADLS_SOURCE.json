@@ -1,5 +1,5 @@
 {
-	"name": "ADLS_CSV_SOURCE",
+	"name": "ADLS_SOURCE",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLS_CSV_SOURCE",
