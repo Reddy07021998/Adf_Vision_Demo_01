@@ -10,12 +10,10 @@
 				"type": "string"
 			},
 			"file": {
-				"type": "string",
-				"defaultValue": "industry_sic.csv"
+				"type": "string"
 			},
 			"Container": {
-				"type": "string",
-				"defaultValue": "bulkcsv"
+				"type": "string"
 			}
 		},
 		"annotations": [],
