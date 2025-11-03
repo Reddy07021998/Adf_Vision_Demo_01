@@ -47,14 +47,21 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ADLS_CSV_SOURCE",
-						"type": "DatasetReference"
+						"referenceName": "ADLS_SOURCE",
+						"type": "DatasetReference",
+						"parameters": {
+							"file": "industry_sic.csv",
+							"Container": "bulkcsv"
+						}
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Parquet_csvoutput",
-						"type": "DatasetReference"
+						"referenceName": "ADLS_DEST",
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "output"
+						}
 					}
 				]
 			}
