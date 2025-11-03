@@ -1,16 +1,24 @@
 {
-	"name": "ADLS_EXCEL_PARQUET_OUTPUT",
+	"name": "ADLS_PARQUET_OUTPUT",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Ls_Excel_Output",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FolderName": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileSystem": "output"
+				"fileSystem": {
+					"value": "@dataset().FolderName",
+					"type": "Expression"
+				}
 			},
 			"compressionCodec": "snappy"
 		},
