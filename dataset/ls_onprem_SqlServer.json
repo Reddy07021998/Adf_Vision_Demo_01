@@ -1,0 +1,12 @@
+{
+	"name": "ls_onprem_SqlServer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_sqlserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
