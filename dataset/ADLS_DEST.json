@@ -9,6 +9,9 @@
 			"container": {
 				"type": "string",
 				"defaultValue": "output"
+			},
+			"filename": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -16,10 +19,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@pipeline().parameters.tablename",
-					"type": "Expression"
-				},
 				"fileSystem": "csvoutput"
 			},
 			"compressionCodec": "snappy"
