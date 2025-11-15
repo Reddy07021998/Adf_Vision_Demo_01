@@ -2,7 +2,7 @@
 	"name": "ADLS_DEST",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage1",
+			"referenceName": "ADLS_DEST_PARQUET",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
